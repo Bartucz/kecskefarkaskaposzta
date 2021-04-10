@@ -1,10 +1,42 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2021. ápr. 10., 15:49:00
-    Author     : Gellai Tamás
-*/
+@charset "utf-8";
+
+*{margin:0; padding:0;}/*megszűnteti a default margint és paddingot, TANÁRNŐVEL EGYEZTETVE*/
+
+main, header, #bal, article, #jobb, footer{
+    border: 1px solid grey;/*a főbb elemk keretet kapnak*/
+    margin: 15px;/*széthúzza a főbb elemek közötti teret*/
+} 
+
+/*az oldal elrendezése gridekkel történik*/
+main{
+    display: grid; /*szülőelem a main*/
+    grid-template-areas: /*meghatározza a gridek elrendezését*/
+        "h h h h h"
+        "b c c c j"
+        "f f f f f";
+    max-width: 80%; /*a main max szélessége*/
+}
+/*a főbb elemknek szükséges megadni egy rövid jelölést a grid-templates -hez*/
+header{grid-area: h;}
+#bal{grid-area: b;}
+article{grid-area: c;}
+#jobb{grid-area: j;}
+footer{grid-area: f;}
+
+header h1{
+    text-align: center;/*a cím középre igazítása*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+img{height: 100px;}/*az azonos magasság beállításával azonos méretűvé válnak a képek*/
+
+#csonak img {
+    height: 421px; /*méretezi a csónakot*/
+    /*az alábbi két sorra együttesen van szükség, hogy a csónak kép a tárolója közepén legyen*/
+    display: block;
+    margin: auto;
+}
+
+article, footer p{background-color: aqua;}/*színezi a csónak tárolójának és a készítők nevét tartalmazó bekezdésnek a hátterét*/
 
