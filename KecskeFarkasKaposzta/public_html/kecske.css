@@ -28,7 +28,10 @@ header h1{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+footer p{
+    text-align: center;
+}
+    
 aside img{height: 100px;}/*az azonos magasság beállításával azonos méretűvé válnak a képek*/
 
 #csonak img {
