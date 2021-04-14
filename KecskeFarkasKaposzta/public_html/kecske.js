@@ -51,10 +51,11 @@ function init() {
 
     $("img")[i].addEventListener("mouseover",kepKiemel);
     $("img")[i].addEventListener("mouseout",kepSima);
-    
+   
   }    
 
-    
+     $("title")[0].innerHTML ="Bartucz Tamás, Gellai Tamás, Kotán Péter";
+     $("footer p")[0].innerHTML ="Bartucz Tamás, Gellai Tamás, Kotán Péter";
 
     for (var i = 0; i < $("aside img").length; i++) {
 
