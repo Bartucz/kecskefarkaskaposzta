@@ -11,15 +11,15 @@ main, header, #bal, article, #jobb, footer{
 main{
     display: grid; /*szülőelem a main*/
     grid-template-areas: /*meghatározza a gridek elrendezését*/
-        "h h h h h"
-        "b c c c j"
-        "f f f f f";
+        "h  h h"
+        "b  c j"
+        "f  f f";
     max-width: 80%; /*a main max szélessége*/
 }
 /*a főbb elemknek szükséges megadni egy rövid jelölést a grid-templates -hez*/
 header{grid-area: h;}
 #bal{grid-area: b;}
-article{grid-area: c;}
+article{grid-area: c; text-align: center; }
 #jobb{grid-area: j;}
 footer{grid-area: f;}
 
@@ -29,13 +29,22 @@ header h1{
     padding-bottom: 15px;
 }
 
-img{height: 100px;}/*az azonos magasság beállításával azonos méretűvé válnak a képek*/
+aside img{height: 100px;}/*az azonos magasság beállításával azonos méretűvé válnak a képek*/
 
 #csonak img {
-    height: 421px; /*méretezi a csónakot*/
+    /*height: 421px; méretezi a csónakot*/
     /*az alábbi két sorra együttesen van szükség, hogy a csónak kép a tárolója közepén legyen*/
-    display: block;
+   
     margin: auto;
+    
+    position: relative;
+    z-index: -5;
+    
+    
+}
+#csonak{
+    height: 0px;
+    
 }
 
 article, footer p{background-color: aqua;}/*színezi a csónak tárolójának és a készítők nevét tartalmazó bekezdésnek a hátterét*/
