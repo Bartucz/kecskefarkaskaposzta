@@ -1,3 +1,4 @@
+window.addEventListener("load", init, false);
 function ID(nev) {
 
     return document.getElementById(nev);
