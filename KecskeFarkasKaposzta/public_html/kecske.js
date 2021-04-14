@@ -55,12 +55,6 @@ function init() {
   }    
 
     
-<<<<<<< HEAD
-       
-=======
-    
-    
->>>>>>> dd53d380d04f609b34d29fa3a799ed664864e009
 
     for (var i = 0; i < $("aside img").length; i++) {
 
@@ -69,14 +63,6 @@ function init() {
       }
 
 
-<<<<<<< HEAD
-  
-=======
-
-
-
->>>>>>> dd53d380d04f609b34d29fa3a799ed664864e009
-  
 }
 
 
