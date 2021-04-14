@@ -11,22 +11,16 @@ function $(nev) {
 
 }
 
-var tomb=[];
+
 var csonak=[];
-//function kattTombbe(){
-//    this.style.display="none";
-//    
-//    tomb.push(this.src);
-//    console.log(tomb);
-//    
-//    
-//    
-//}
+
 
 function csonakba () {
+    //3. feladat
     csonak.push(this.src);
-    tomb.push(this.src);
-    console.log(tomb);
+    console.log(csonak);
+    
+    //7.feladat:
     this.style.display="none";
     
     ID("csonak").innerHTML +='<img src="'+this.src+'" alt="utas" style="position: relative; top:130px; right: 0; width: 100px; height:100px; z-index: 5;">';
