@@ -49,3 +49,7 @@ aside img{height: 100px;}/*az azonos magasság beállításával azonos méretű
 
 article, footer p{background-color: aqua;}/*színezi a csónak tárolójának és a készítők nevét tartalmazó bekezdésnek a hátterét*/
 
+.kiemel{
+    border: 2pt solid red;
+    cursor: grab;
+}

@@ -35,16 +35,26 @@ function csonakbolBalra(){
     
 }
 
+function kepKiemel(){
+    this.classList.add("kiemel");
+}
 
+function kepSima(){
+    this.classList.remove("kiemel");
+}
 
 
 function init() {
     
+    for (var i = 0; i < $("img").length; i++) {
+
+    $("img")[i].addEventListener("mouseover",kepKiemel);
+    $("img")[i].addEventListener("mouseout",kepSima);
     
+  }    
+
     
-    
-    
-    
+       
 
 for (var i = 0; i <= $("aside img").length; i++) {
 
@@ -55,10 +65,8 @@ for (var i = 0; i <= $("aside img").length; i++) {
   }
 
 
-
-
-
-  ;
+  
+  
 }
 
 
