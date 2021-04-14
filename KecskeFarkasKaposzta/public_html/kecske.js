@@ -28,7 +28,7 @@ function csonakba () {
     tomb.push(this.src);
     console.log(tomb);
     this.style.display="none";
-    ID("csonak").innerHTML +='<img src="'+this.src+'" alt="utas" >';//style="position: relative;top: 0px;  right: 0; width: 50px; height:50px; z-index: 5;"
+    ID("csonak").innerHTML +='<img src="'+this.src+'" alt="utas" style="position: relative;top: 200px;  right: 0; width: 50px; height:50px; z-index: 5;">';//style="position: relative;top: 0px;  right: 0; width: 50px; height:50px; z-index: 5;"
 }
 function csonakbolJobbra(){
     
