@@ -44,6 +44,18 @@ function kepSima(){
     this.classList.remove("kiemel");
 }
 
+function megeszi() {
+    var kecske = $("#bal img")[0].src;
+    var kaposzta = $("#bal img")[1].src;
+    var farkas = $("#bal img")[2].src;
+    
+    if (csonak.includes(kecske) && csonak.includes(farkas)) {
+        alert("Veszely!");
+    }
+    else if (csonak.includes(kecske) && csonak.includes(kaposzta)){
+        alert("Veszely!");
+    }
+}
 
 function init() {
     
@@ -60,6 +72,7 @@ function init() {
     for (var i = 0; i < $("aside img").length; i++) {
 
         $("#bal img")[i].addEventListener("click", csonakba);
+        $("#bal img")[i].addEventListener("click", megeszi);
     
       }
 
